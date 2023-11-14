@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Avaliação 1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <H1><b> Página 3 </b></H1>
+    <br>
+    |<A href="index.html">Página Inicial</A>|
+    |<a href="Pag1.html"> Página 1º.</a>|
+    |<a href="Pag2.html"> Página 2°.</a>
+    |<a href="Pag3.html">Página 3º.</a>
+    |<a href="Pag4.html">Página 4º.</a>
+    <h1>Cadastro</h1>
+    <form method="post" action="/action_page.php" >
+        <fieldset>
+            <legend> Dados PESSOAIS</legend>
+            <label for="nome"> Nome:</label>
+            <br>
+            <input id="nome" type="text" name="nome" placeholder="Nome Completo" required>
+            <br>
+            <label for="CPF"> CPF:</label>
+            <br>
+            <input id="CPF" type="text" maxlength="11" name="CPF" placeholder="Nº do CPF" readonly>
+            <br>
+            <label for="RG"> RG:</label>
+            <br>
+            <input id="RG" type="text" maxlength="10" name="RG" placeholder="Nº do RG" required>
+            <br>
+            <label for="Idade"> Idade:</label>
+            <br>
+            <input id="idade" type="number" maxlength="3" name="idsde" min="0" placeholder="Idade" required>
+            <br>
+            <A> Sexo: </A><br>
+            <input type="radio" id="sexo" name="sexo" value="Feminino">
+            <label for="Feminino">Feminino</label><br>
+            <input type="radio" id="sexo" name="sexo" value="Masculino">
+            <label for="Masculino">Masculino</label><br>
+            <input type="radio" id="sexo" name="sexo" value="Não Binário">
+            <label for="Não Binário">Não Binário</label>
+            <br>
+            <a> Gêneros Favoritos:</a><br>
+            <input type="checkbox" id="genero" name="sert." value="Sertanejo" >
+            <label for="sert"> Sertanejo</label><br>
+            <input type="checkbox" id="genero" name="pop" value="POP">
+            <label for="pop"> Pop</label><br>
+            <input type="checkbox" id="genero" name="elet." value="Eletrônica">
+            <label for="elet"> Eletrônica</label><br>
+            <input type="checkbox" id="genero" name="rock" value="Rock">
+            <label for="rock"> Rock </label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Dados de Login:</legend>
+            <label for="email">Email:</label><br>
+
+            <input required id="email" type="email" name="email " placeholder="Email Principal" ><br>
+
+            <label for="Senha">Senha:</label><br>
+            <input required id="Senha" type="password " name="senha" placeholder="Digite a senha"><br>
+        </fieldset>
+        <br>
+        <fieldset>
+
+            <label for="opção de pagamento"> Opção de pagamento:</label>
+            <select name="text" id="opção de pagamento " name="opção de pagamento">
+                <option value="CC">- Selecione -</option>
+                <option value="CC">Cartão de Crédito</option>
+                <option value="CD">Cartão de Débito</option>
+                <option value="PIX"> Pix</option>
+                <option value="Boleto"> Boleto</option>
+                <option value="CHEQUE">Cheque</option>
+            </select>
+            <br>
+
+
+        </fieldset>
+        <fieldset>
+            <legend>Comentários:</legend>
+            <textarea name="message" rows="10" cols="30"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend> Anexos:</legend>
+            <label for="Anexo">Anexo:</label>
+            <input id="Anexo " type="file" accept="">
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Cancelar" />
+    </form>
+
+
+
+
+</body>
+
+</html>
